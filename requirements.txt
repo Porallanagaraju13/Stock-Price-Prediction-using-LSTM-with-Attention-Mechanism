@@ -1,0 +1,10 @@
+
+tensorflow
+numpy
+pandas
+matplotlib
+yfinance
+scikit-learn
+Install all dependencies quickly by:
+
+pip install -r requirements.txt

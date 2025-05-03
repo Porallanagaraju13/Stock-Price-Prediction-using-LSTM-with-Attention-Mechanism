@@ -1,0 +1,48 @@
+📄 Project Abstract
+Stock Price Prediction using LSTM with Attention Mechanism
+1. Introduction
+In the financial world, stock price prediction is one of the most challenging and intriguing tasks. Accurate stock forecasting can provide significant advantages in decision-making and investment strategies. This project focuses on predicting stock prices using Long Short-Term Memory (LSTM) networks enhanced with a custom Attention Mechanism, allowing the model to focus on critical information within sequences.
+
+2. Objective
+The primary objective of this project is to:
+
+Predict future stock closing prices based on past stock data.
+
+Improve prediction accuracy by integrating an Attention Layer with LSTM.
+
+Visualize and compare actual vs predicted stock prices.
+
+3. Methodology
+Data Collection: Historical stock data was collected using the yfinance library from Yahoo Finance, focusing primarily on the 'Close' prices.
+
+Data Preprocessing: Data was normalized using MinMaxScaler to improve training efficiency. Sequences of 60 days were created as input to predict the next day's price.
+
+Model Building:
+
+LSTM layer for capturing sequential temporal dependencies.
+
+Custom-built Attention Layer to highlight important time steps.
+
+Dense layers for regression output.
+
+Model Training: The model was trained using the Adam optimizer and Mean Squared Error (MSE) loss function over multiple epochs.
+
+Evaluation: The model’s performance was evaluated by plotting the predicted prices against actual prices for visual comparison.
+
+4. Results
+The model successfully predicted the stock price trends.
+
+The Attention Mechanism helped the LSTM model to focus on important historical patterns, improving prediction quality.
+
+Visualization showed that predicted curves closely followed actual price movements.
+
+5. Future Enhancements
+Incorporate additional features such as trading volume, opening price, and technical indicators.
+
+Fine-tune model hyperparameters to achieve even higher accuracy.
+
+Deploy the model using Streamlit or Flask for real-time stock prediction.
+
+6. Conclusion
+This project demonstrates the potential of deep learning models, particularly LSTM networks combined with Attention mechanisms, in solving complex sequential prediction problems like stock price forecasting. It opens up further possibilities for building automated financial advisory systems.
+
